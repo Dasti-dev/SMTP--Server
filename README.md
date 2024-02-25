@@ -66,4 +66,21 @@ server.listen(25, 'localhost', () => {
 });
 ```
 ## For Better explanation -
-https://www.notion.so/SMTP-Server-25-960d93656a214330817677b784c10c46?pvs=4
+- https://www.notion.so/SMTP-Server-25-960d93656a214330817677b784c10c46?pvs=4
+- https://nodemailer.com/extras/smtp-server/
+
+## For Hosting - 
+- Make an EC2 instance.
+- Configure security group inbound rules to accept SMTP request at PORT 25
+- Buy a domain , set mail.DomainName's A record to IP of your Instances.
+- Set DomainName MX to Mail.DomainName.
+
+## Future Additions -
+- Add a DB to stores emails.
+- Make route server to send mail using domain name.
+- Use Auth to login.
+- Make signUp and its DB and there records on Cloudflare.
+- Add digital Signature.
+- Add Encryption.
+
+### Checkout Qmail , a Quantum secure mailing client application.
